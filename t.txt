@@ -1,0 +1,10 @@
+gcloud auth application-default login 
+dbt deps  # run this command will install the dbt_packages that are defined in packages.yml
+dbt run -s stg_ecommerce__orders --profiles-dir .  # run selected file
+dbt --profiles-dir . compile     # compile 
+
+dbt init
+dbt debug --config-dir
+open /Users/ryanye/.dbt  # view your profiles.yml files
+
+
