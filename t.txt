@@ -6,5 +6,21 @@ dbt --profiles-dir . compile     # compile
 dbt init
 dbt debug --config-dir
 open /Users/ryanye/.dbt  # view your profiles.yml files
+dbt clean & dbt deps
 
 
+dbt run -s stg_ecommerce__orders --full-refresh  # will drop previous built table or view
+
+
+
+
+git pull --rebase origin main
+
+Rebased your local main onto origin/main and updated it successfully.
+Ran: git pull --rebase origin main
+
+Result: Local commits replayed on top of remote; main is up to date.
+
+If you want this behavior by default:
+For this repo: git config pull.rebase true
+Globally: git config --global pull.rebase true
